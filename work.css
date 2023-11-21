@@ -1,0 +1,328 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #111111;
+    font-family: 'Open Sans';
+    min-height: 200vh;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.logo-mobile {
+    display: none;
+}
+.slideanim {
+    visibility:hidden;
+}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+}
+.logo {
+    height: 100px; 
+    width: 100px;
+}
+.logo:hover {
+    height: 110px; 
+    width: 110px;
+    transition: height 0.2s, width 0.2s;
+}
+.navbar {
+    border: 0;
+    line-height: 1.42857143;
+    letter-spacing: 2px;
+    border-radius: 0;
+    font-family: 'Krona One';
+    background-color: transparent;
+}
+.navbar-default{
+    transition:500ms ease;
+    background:#ffffff;
+}
+.navbar-default.scrolled{
+    background-color: #ffffff;
+    box-shadow: 5px 0px 20px rgba(0,0,0, .2);
+}
+.navbar li .nav-link, .navbar .navbar-brand {
+    font-size: 14px; 
+    font-family: 'Krona One'; 
+    color: #000000 !important;
+}
+.navbar-nav li .nav-link:hover, .navbar-nav li.active .nav-link {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 200;
+    transition: color 0.2s, font-size 0.2s, font-weight 0.2s;
+}
+.ph-nav {
+    display: none;
+    margin-left: 50px;
+}
+.bg {
+    background: linear-gradient(to bottom right, #00868B, #CC0030);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.jumbotitle {
+    font-family:"Montserrat";
+    font-size: 27px;
+    color: #FFFFFF;
+}
+.maintitle {
+    font-family: 'Krona One';
+    font-size: 27px;
+}
+.social-logo {
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+    margin: 10px;
+}
+.social-logo:hover {
+    height: 80px;
+    width: 80px;
+    transition: height 0.2s, width 0.2s;
+}
+
+.images {
+    position: block;
+    width: 100%;
+    height: 80% !important;
+    border-radius: 25px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+    border-radius: 25px;
+}
+.box {
+    position: relative;
+    height: 100%;
+}
+.box:hover .overlay {
+    opacity: 0.75;
+}
+.text {
+    color: white;
+    font-size: 40px;
+    font-family: 'Lato';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.ft {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+}
+.ft:hover {
+    width: 60px;
+    height: 60px;
+    transition: height 0.2s, width 0.2s;
+}
+.maintext {
+    font-family: 'Lato';
+    font-size: 24px;
+}
+@media (max-width: 1400px) {        
+    .art-title {
+        font-size: 24px;
+    }
+    .port-title {
+        color: #ffffff;
+    }
+    .portexp {
+        color: #ffffff;
+    }
+    .counter-port {
+        font-size: 40px;
+        color: #ffffff;
+    }
+    .footlink {
+        display: none;
+    }
+    .port-pc {
+        display: none;
+    }
+    .port-ph {
+        display: block;
+    }
+}
+@media (max-width: 992px) {
+    .jumbotitle {
+        font-size: 30px !important;
+    }
+    .ph-nav {
+        display: block;
+        font-family: 'Cinzel' !important;
+        font-size: 24px !important;
+    }
+    .ph-link {
+        padding-left: 30px;
+    }
+    .ind-link {
+        padding-top: 10px;
+    }
+    .aboutlogos {
+        width: 70px; 
+        height: 60px; 
+        text-align: center;
+    }
+    .logostext {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        color: #ffffff;
+    }
+    .codingtitle {
+        padding-left: 30px !important; 
+        font-size: 20px !important; 
+    }
+    .codingtext {
+        padding-left: 18px !important;
+        font-size: 16px !important;
+    }
+    .designtitle {
+        padding-right: 15px !important; 
+        font-size: 22px !important; 
+    }
+    .designtext {
+        padding-right: 20px !important;
+        font-size: 16px !important; 
+    }
+    .bartitle {
+        font-size: 18px !important; 
+    }
+    .bartext {
+        font-size: 16px !important;
+    }
+    .counter-heading {
+        font-size: 18px !important;
+    }
+    .counter-count {
+        font-size: 50px !important;
+    }
+    .counter-text {
+        font-size: 75px !important;
+    }
+    .stats {
+        border: 0px transparent !important;
+    }
+    .skill {
+        padding-left: 20px !important; 
+        padding-right: 20px !important;
+    }
+    .star {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .projtext {
+        font-size: 18px !important;
+    }
+    .pc-resume {
+        display: none;
+    }
+    .ph-resume {
+        display: block;
+    }
+    .almaeriff-pc {
+        display: none;
+    }
+    .almaeriff-ph {
+        display: block;
+    }
+    .almaeriff-title {
+        font-size: 18px !important;
+    }
+    .almaerifftext {
+        font-size: 16px !important;
+    }
+    .almaeriff-pic {
+        width: 150px !important; 
+        height: 150px !important;
+    }
+    .overlay {
+        padding: 20px;
+    }
+    .box {
+        padding: 20px;
+    }
+    .box .overlay {
+        padding: 20px;
+        opacity: 0.75;
+    }
+    .port-pc {
+        display: none;
+    }
+    .port-ph {
+        display: block;
+    }
+    .footlink {
+        display: none;
+    }
+    .art-title {
+        font-size: 20px;
+    }
+    .port-title {
+        color: #ffffff;
+    }
+    .porttext {
+        color: #FFFFFF;
+    }
+    .portexp {
+        color: #ffffff;
+    }
+    .counter-port {
+        font-size: 30px;
+        color: #ffffff;
+    }
+}
