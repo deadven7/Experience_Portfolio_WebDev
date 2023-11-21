@@ -197,6 +197,9 @@ body {
     .port-ph {
         display: block;
     }
+    .pc-display {
+        display: none;
+    }
 }
 @media (max-width: 992px) {
     .jumbotitle {
@@ -267,6 +270,9 @@ body {
     }
     .projtext {
         font-size: 18px !important;
+    }
+    .pc-display {
+        display: none;
     }
     .pc-resume {
         display: none;
